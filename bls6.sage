@@ -106,7 +106,6 @@ tra = aG1G2 + aG1G2**(p**2) + aG1G2**(p**4)
 trb = bG1G2 + bG1G2**(p**2) + bG1G2**(p**4)  
 
 #XTR DH
-
 assert computeS(a,trb)[1] ==  computeS(b,tra)
 
 
