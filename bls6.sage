@@ -8,3 +8,4 @@ FpX = Fp['X']
 X = FpX.gen()
 D = fundamental_discriminant(-D)
 H = FpX(hilbert_class_polynomial(D))
+(j,_) = H.roots()
