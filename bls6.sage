@@ -6,6 +6,6 @@ p = 1/3*(x-1)^2*(x^2 -x+1) +x
 Fp = GF(p)
 FpX = Fp['X']
 X = FpX.gen()
-D = fundamental_discriminant(-D)
+D = fundamental_discriminant(-3)
 H = FpX(hilbert_class_polynomial(D))
 (j,_) = H.roots()
