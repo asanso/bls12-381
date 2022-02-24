@@ -8,4 +8,5 @@ FpX = Fp['X']
 X = FpX.gen()
 D = fundamental_discriminant(-3)
 H = FpX(hilbert_class_polynomial(D))
-(j,_) = H.roots()
+E = EllipticCurve_from_j(H.roots()[0][0])  
+assert E.order() % r  == 0 
